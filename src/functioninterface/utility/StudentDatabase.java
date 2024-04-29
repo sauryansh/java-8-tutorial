@@ -1,4 +1,6 @@
-package functioninterface.consumerexample;
+package functioninterface.utility;
+
+import functioninterface.utility.Student;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,5 +1,8 @@
 package functioninterface.biconsumerexample;
 
+import functioninterface.utility.Order;
+import functioninterface.utility.Product;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiConsumer;

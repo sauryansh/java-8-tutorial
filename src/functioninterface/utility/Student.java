@@ -1,4 +1,4 @@
-package functioninterface.consumerexample;
+package functioninterface.utility;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
