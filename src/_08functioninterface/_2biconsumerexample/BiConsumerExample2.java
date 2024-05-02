@@ -1,4 +1,4 @@
-package functioninterface.biconsumerexample;
+package _08functioninterface._2biconsumerexample;
 
 import java.util.*;
 import java.util.function.BiConsumer;

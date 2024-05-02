@@ -1,12 +1,12 @@
-package functioninterface.consumerexample;
+package _08functioninterface._1consumerexample;
 
-import functioninterface.utility.Student;
-import functioninterface.utility.StudentDatabase;
+import _08functioninterface.utility.Student;
+import _08functioninterface.utility.StudentDatabase;
 
 import java.util.List;
 import java.util.function.Consumer;
 
-public class ConsumerExample {
+public class _13ConsumerExample {
     static Consumer<String> c1 = (name)-> System.out.println(name.toUpperCase());
     static Consumer<Student> c2 = (student)-> System.out.println(student);
     static Consumer<Student> c3 = (student -> System.out.print(student.getName()+" <-- plays -->"));

@@ -1,14 +1,14 @@
-package functioninterface.predicate;
+package _08functioninterface._3predicate;
 
-import functioninterface.utility.Student;
-import functioninterface.utility.StudentDatabase;
+import _08functioninterface.utility.Student;
+import _08functioninterface.utility.StudentDatabase;
 
 import java.util.List;
 import java.util.function.Predicate;
 
 public class PredicateStudentExample2 {
-	static Predicate<Student> p1 = student -> student.getGradeLevel() >= 3;
-	static Predicate<Student> p2 = student -> student.getGpa() >= 3.9;
+	public static Predicate<Student> p1 = student -> student.getGradeLevel() >= 3;
+	public static Predicate<Student> p2 = student -> student.getGpa() >= 3.9;
 	
 	public static void filterStudentByGradeLevel() {
 		List<Student> studentList = StudentDatabase.getAllStudentDetails();

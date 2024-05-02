@@ -1,4 +1,4 @@
-package functioninterface.utility;
+package _08functioninterface.utility;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
