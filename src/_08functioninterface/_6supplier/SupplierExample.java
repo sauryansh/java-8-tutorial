@@ -1,7 +1,7 @@
 package _08functioninterface._6supplier;
 
-import _08functioninterface.utility.Student;
-import _08functioninterface.utility.StudentDatabase;
+import _00utility.Student;
+import _00utility.StudentDatabase;
 
 import java.util.Arrays;
 import java.util.List;

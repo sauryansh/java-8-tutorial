@@ -1,4 +1,4 @@
-package lambda.runnable;
+package _07lambda.runnable;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,8 +1,8 @@
-package impvsde;
+package _02impvsde;
 
 import java.util.stream.IntStream;
 
-public class ImperativeVsDeclarativeExample1 {
+public class _04ImperativeVsDeclarativeExample1 {
     public static void main(String[] args) {
         /**
          * Imperative Style: how style of programming

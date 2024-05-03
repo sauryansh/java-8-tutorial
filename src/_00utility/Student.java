@@ -1,4 +1,4 @@
-package _08functioninterface.utility;
+package _00utility;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,4 +16,16 @@ public class Student {
     private double gpa;
     private String gender;
     private List<String> activities;
+
+    public Student() {
+
+    }
+
+    public Student(String s) {
+        this.name = s;
+    }
+
+    public void printListOfActivities(){
+        System.out.println(activities);
+    }
 }

@@ -1,10 +1,10 @@
-package lambda.runnable;
+package _07lambda.runnable;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class PersonMain {
+public class _03PersonMain {
     public static void main(String[] args) {
         List<Person> people = new ArrayList<>();
         people.add(new Person("Alice", 30, 50000));

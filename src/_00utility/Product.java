@@ -1,4 +1,4 @@
-package _08functioninterface.utility;
+package _00utility;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class Order {
-    private Product product;
-    private int quantity;
+public class Product {
+    private String name;
+    private double price;
 }

@@ -1,6 +1,6 @@
-package lambda.runnable;
+package _07lambda.runnable;
 
-public class RunnableLambdaExample {
+public class _01RunnableLambdaExample {
     public static void main(String[] args) {
         /**
          * Prior Java 8

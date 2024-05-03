@@ -1,8 +1,8 @@
-package lambda.runnable;
+package _07lambda.runnable;
 
 import java.util.Comparator;
 
-public class ComparatorLambdaExample {
+public class _02ComparatorLambdaExample {
     public static void main(String[] args) {
         /**
          * prior to java 8

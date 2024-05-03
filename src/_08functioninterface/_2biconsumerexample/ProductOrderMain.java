@@ -1,7 +1,7 @@
 package _08functioninterface._2biconsumerexample;
 
-import _08functioninterface.utility.Order;
-import _08functioninterface.utility.Product;
+import _00utility.Order;
+import _00utility.Product;
 
 import java.util.ArrayList;
 import java.util.List;

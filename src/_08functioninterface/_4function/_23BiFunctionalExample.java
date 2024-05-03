@@ -1,8 +1,8 @@
 package _08functioninterface._4function;
 
 import _08functioninterface._3predicate.PredicateStudentExample2;
-import _08functioninterface.utility.Student;
-import _08functioninterface.utility.StudentDatabase;
+import _00utility.Student;
+import _00utility.StudentDatabase;
 
 import java.util.HashMap;
 import java.util.List;
