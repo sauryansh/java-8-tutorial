@@ -7,27 +7,40 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class _13ConsumerExample {
-    static Consumer<String> c1 = (name)-> System.out.println(name.toUpperCase());
-    static Consumer<Student> c2 = (student)-> System.out.println(student);
-    static Consumer<Student> c3 = (student -> System.out.print(student.getName()+" <-- plays -->"));
-    static Consumer<Student> c4 = (student -> System.out.println(student.getActivities()));
+    static Consumer<String> c1 = (name)-> {
+        System.out.println("printing c1 ------------------------>");
+        System.out.println(name.toUpperCase());
+    };
+    static Consumer<Student> c2 = (student -> {
+        System.out.println("printing c2 ------------------------>");
+        System.out.println(student);
+    });
+    static Consumer<Student> c3 = (student -> {
+        System.out.println("printing c3 ------------------------>");
+        System.out.print(student.getName()+" <-- plays -->");
+    });
+    static Consumer<Student> c4 = (student -> {
+        System.out.println("\nprinting c4 ------------------------>");
+        System.out.println(student.getActivities());
+    });
     public static void printName(){
-        //Consumer<Student> c2 = (student)-> System.out.println(student);
         final List<Student> allStudentDetails = StudentDatabase.getAllStudentDetails();
         //Print all student details
         allStudentDetails.forEach(c2);
     }
 
     public static void printNameAndThereActivities(){
-/*        Consumer<Student> c3 = (student -> {
-            //System.out.println("Student Name: "+student.getName() + " and there activties: "+ student.getActivities());
+        Consumer<Student> c3 = (student -> {
+            System.out.println("printing c3 ------------------------>");
+            //System.out.println("Student Name: "+student.getName() + " and there activities: "+ student.getActivities());
             System.out.print(student.getName()+" <-- plays -->");
-        });*/
+        });
 
-/*        Consumer<Student> c4 = (student -> {
+        Consumer<Student> c4 = (student -> {
+            System.out.println("\nprinting c4 ------------------------>");
             //System.out.println("Student Name: "+student.getName() + " and there activties: "+ student.getActivities());
             System.out.println(student.getActivities());
-        });*/
+        });
         final List<Student> allStudentDetails = StudentDatabase.getAllStudentDetails();
         allStudentDetails.forEach(c3.andThen(c4)); //Consumer chaining
     }
@@ -44,7 +57,7 @@ public class _13ConsumerExample {
 
         c1.accept("pritam");
 
-        // printName();
+        printName();
         System.out.println("----------------------------------------------------- -");
         printNameAndThereActivities();
         System.out.println("----------------------------------------------------- -");

@@ -24,19 +24,17 @@ public class _01RunnableLambdaExample {
          *         to determine the class to be functional interface.
          *         It is an optional annotation.
          */
-
+        //First optimizing: Reducing boilerplate code
         Runnable runnableLambda = () ->{
             System.out.println("Inside Runnable 2");
         };
         new Thread(runnableLambda).start();
-
+        //Second optimizing: Single line statement for a single line statement inside lambda body
         Runnable runnableLambda1 = () -> System.out.println("Inside Runnable 3");
         new Thread(runnableLambda1).start();
 
-
-        new Thread(()->{
-            System.out.println("Inside Runnable 4");
-        }).start();
+        //Third optimizing: Single line statement for a single line statement inside lambda body
+        new Thread(()-> System.out.println("Inside Runnable 4")).start();
 
         //Legacy way - Anonymous Class.
         new Thread(new Runnable() {
