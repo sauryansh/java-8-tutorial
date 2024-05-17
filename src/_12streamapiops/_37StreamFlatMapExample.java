@@ -4,7 +4,6 @@ import _00utility.Student;
 import _00utility.StudentDatabase;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class _37StreamFlatMapExample {
     public static List<String> printStudentActivities(){

@@ -4,7 +4,7 @@ import _00utility.StudentDatabase;
 
 import static java.util.stream.Collectors.counting;
 
-public class StreamCountingExample {
+public class _57TerminalOperationCountingExample {
 	public static long count(){
 		return StudentDatabase.getAllStudentDetails()
 			  .stream()

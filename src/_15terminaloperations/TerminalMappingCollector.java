@@ -6,7 +6,8 @@ import _00utility.StudentDatabase;
 import java.util.List;
 import java.util.Set;
 
-import static java.util.stream.Collectors.*;
+import static java.util.stream.Collectors.mapping;
+import static java.util.stream.Collectors.toSet;
 
 public class TerminalMappingCollector {
 	public static void main(String[] args) {

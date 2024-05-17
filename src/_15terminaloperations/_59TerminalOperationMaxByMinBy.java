@@ -5,12 +5,11 @@ import _00utility.StudentDatabase;
 
 import java.util.Comparator;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
-import static java.util.stream.Collectors.minBy;
 import static java.util.stream.Collectors.maxBy;
+import static java.util.stream.Collectors.minBy;
 
-public class TerminalOperationMaxByMinBy {
+public class _59TerminalOperationMaxByMinBy {
     public static Optional<Student> minByExample(){
         return StudentDatabase.getAllStudentDetails()
                 .stream()

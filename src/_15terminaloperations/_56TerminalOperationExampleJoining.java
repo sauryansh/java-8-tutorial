@@ -5,7 +5,7 @@ import _00utility.StudentDatabase;
 
 import java.util.stream.Collectors;
 
-public class StreamAPIExampleJoining {
+public class _56TerminalOperationExampleJoining {
 	public static String joining_1(){
 		return StudentDatabase.getAllStudentDetails()
 			  .stream()
