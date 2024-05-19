@@ -5,6 +5,8 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.util.List;
+import java.util.Optional;
+
 @Getter
 @Setter
 @ToString
@@ -15,6 +17,7 @@ public class Student {
     private String gender;
     private List<String> activities;
     private int notebooks;
+    private Optional<Bike> bike = Optional.empty();
     public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities, int notebooks) {
         this.name = name;
         this.gradeLevel = gradeLevel;
